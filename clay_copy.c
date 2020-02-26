@@ -5,13 +5,18 @@
 *  Copy a File
 */
 
+#include <fcntl.h>
+#include <stdio.h>
+#include <string.h>
+
+
 const int MAX_FILENAME_LENGTH = 20;
 
 int main(int argc, char **argv) {
 
   if (argc > 2) {
-    char file1[MAX_FILENAME_LENGTH] = '\000';
-    char file2[MAX_FILENAME_LENGTH] = '\000';
+    char file1[MAX_FILENAME_LENGTH];
+    char file2[MAX_FILENAME_LENGTH];
 
     strncpy(file1, argv[1], MAX_FILENAME_LENGTH - 1);
     file1[MAX_FILENAME_LENGTH - 1] = '\000';
