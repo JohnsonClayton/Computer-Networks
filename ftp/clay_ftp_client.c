@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main(void) {
-  puts("Server says hello!");
+  puts("Client says hello!");
   return 0;
 }
